@@ -43,7 +43,7 @@ namespace AtmaAPI.Controllers
                 
                 var result = _salesService.GetSoldArticlesPerDay();
 
-                return new JsonResult(JsonConvert.SerializeObject(result));
+                return new JsonResult(result);
 
             } catch (Exception e)
             {
@@ -68,7 +68,7 @@ namespace AtmaAPI.Controllers
 
                 var result = _salesService.GetTotalRevenuePerDay();
 
-                return new JsonResult(JsonConvert.SerializeObject(result));
+                return new JsonResult(result);
 
             } catch (Exception e)
             {
@@ -94,7 +94,7 @@ namespace AtmaAPI.Controllers
 
                 var result = _salesService.GetTotalRevenuePerArticle();
 
-                return new JsonResult(JsonConvert.SerializeObject(result));
+                return new JsonResult(result);
 
             } catch (Exception e)
             {
